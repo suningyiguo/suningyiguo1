@@ -1,39 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible " content="IE=edge" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>在线咨询</title>
-  <style>
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0
-    }
-  </style>
-</head>
-<body>
-  <script type="text/javascript">
-    function parse(query) {
-      var qs = {};
-      var i = query.indexOf('?');
-      if (i < 0 && query.indexOf('=') < 0) {
-        return qs;
-      } else if (i >= 0) {
-        query = query.substring(i + 1);
-      }
-      var parts = query.split('&');
-      for (var n = 0; n < parts.length; n++) {
-        var part = parts[n];
-        var key = part.split('=')[0];
+&它;!文档型HTML&TL;
+ < Html 朗 = "en" >
+ < 头 >
+   < 梅塔 查理特 = "UTF-8"  />
+   < 梅塔 Htt = "X-UA-Compatible "  满意的 = "e=边缘"  />
+   < 梅塔 姓名 = "viewport"
+     满意的 = "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"  />
+   < 标题 > 在线咨询 </ 标题 >
+  < 风格>
+    6.艾滋病毒/艾滋病,
+    机构{{
+      width: 100%;width: 100%;
+      height: 100%;height: 100%;
+      margin: 0;margin: 0;
+      填充:0填充:0
+    }}
+   </ 风格 >
+ </ 头 >
+ < 身体 >
+   < 剧本 类型 = "案文/JavaS来文" >
+    函数解析(查询){function parse(query) {
+      var qs = {};var qs = {};
+      var i = query.indexOf('?');var i = query.indexOf('?');
+
+        return qs;return qs;
+      } else if (i >= 0) {} else if (i >= 0) {
+        query = query.substring(i + 1);substring(i + 1);
+      }}
+
+
+        VAR零件=零件[n];var part = parts[n];
+        var key = part.split('=')[0];var key = part.split('=')[0];
         var val = part.split('=')[1];
         key = key.toLowerCase();
         if (typeof qs[key] === 'undefined') {
-          qs[key] = decodeURIComponent(val);
+          QS[键]=脱模成分;
         } else if (typeof qs[key] === 'string') {
           var arr = [qs[key], decodeURIComponent(val)];
           qs[key] = arr;
@@ -43,21 +43,21 @@
       }
       return qs;
     }
-    function init() {
+    信息技术职能(){
       (function (m, ei, q, i, a, j, s) {
-        m[i] =
+        M[I]=
           m[i] ||
           function () {
             (m[i].a = m[i].a || []).push(arguments);
           };
         (j = ei.createElement(q)), (s = ei.getElementsByTagName(q)[0]);
-        j.async = true;
+        同步=正确;
         j.charset = 'UTF-8';
         j.src = 'https://static.meiqia.com/widget/loader.js';
         s.parentNode.insertBefore(j, s);
       })(window, document, 'script', '_MEIQIA');
       var data = parse(window.location.search);
-      var entId = data.entid || data.eid;
+      VARETED=数据.实体.|数据.EID;
       if (Object.prototype.toString.call(entId) === '[object Array]') {
         entId = +entId[0];
       } else {
